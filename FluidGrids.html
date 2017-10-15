@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .abc{
+            width: 14.6666667%;
+            height: 150px;
+            background: #23abe8;
+            margin: 1%;
+/*           div 預設 block自動換行*/
+           display: inline-block;
+/*            inline-block 會有空隙*/
+/*            display: block;*/
+            float: left;
+        }
+        .clear{
+            clear:both;
+        }
+        @media screen and (max-width: 600px){
+            .abc{
+            width: 31.3333333%;
+            margin: 1%;
+            }
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+        <div class="abc"></div>
+        <div class="abc"></div>
+        <div class="abc"></div>
+        <div class="abc"></div>
+        <div class="abc"></div>
+        <div class="abc"></div>
+        <div class="clear"></div>
+
+</body>
+</html>
